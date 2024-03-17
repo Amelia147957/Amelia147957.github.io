@@ -232,3 +232,12 @@ img {
 .red {
   color: #cf0808;
 }
+
+li {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  text-indent: 36px;
+  margin: 10px;
+}
