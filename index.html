@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YuTing申請書</title>
+    <title>YuTing申請書(最後有小任務的心得感想)</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>YuTing申請書</h1>
     <div class="container">
-      <div class="box1">
-        <h3>兩百字內個人簡介</h3>
+      <details class="details-class1" open>
+        <summary >兩百字內個人簡介</summary>
         <p>
           您好，我叫蘇于婷。我之前是臨床護理師，因疫情期間體會到人生多重面向，故決定跳脫護理領域，追求一直感興趣的資訊科技。疫情使線上學習資源豐富，便開始自學寫程式。過程中，每解決問題或掌握新知識時，我感受到學習帶來的成就感和開心。後來進入東華的資工所就讀，<span
             class="red"
@@ -18,31 +18,35 @@
           >。希望透過bootcamp來實踐及加深理解，進一步學習技能，以便順利找到一份工作，也希望未來將過往經驗與新學的技術結合，貢獻於社會。
         </p>
         <img src="YuTing.jpg" alt="me" width="304" height="228" />
-      </div>
-
-      <div class="box2">
-        <h3>為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。</h3>
+      </details>
+      
+      
+      <details class="details-class1" open>
+        <summary>為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。</summary>
         <p>
           為了想要成為軟體工程師，除了一開始我先透過網路上的資源，例如:Udemy、YouTube等等方式先學習Python，並且我先選擇就讀資訊工程研究所，想說獲取學歷可以拿到面試的敲門磚，並且在碩士一年級下學期獲得書卷獎，目前歷年排名是<span
             class="red"
             >1/42</span
           >，就學期間努力獲得好成績也是希望說可以獲取工作資格。因為就學期間目前學習的東西都跟機器學習、深度學習等等較相關，但我知道我未來要當後端工程師，並且目前市場上可能還在凍結中，所以希望透過此bootcamp的訓練過程，可以讓我更順利得到工作。
         </p>
-        <p>
-          關於具體作品的部分:
-          <ul>
-            <li>學校上課的部分(作業較多關於機器學習以及深度學習的)</li>
-            <li>而論文爬蟲部分-><a
-              href="https://youtu.be/bxy0onymuWo"
-              class="red"
-              >請點我</a
-            ></li>
-            <li>自己做的小Project(搶學校運動場地用的)-><a
-              href="https://youtu.be/3K12Dw2bY-Y" class="red"
-              >請點我</a
-            ></li>
-          </ul>
-        </p>
+
+        <div class="dropdown">
+          <button class="drop">關於具體作品的部分(按我)</button>
+          <div class="dropdown-content">
+            <ul >
+              <li>學校上課的部分(作業較多關於機器學習以及深度學習的)</li>
+              <li><a
+                href="https://youtu.be/bxy0onymuWo"
+                >論文爬蟲部分</a>
+              </li>
+              <li><a
+                href="https://youtu.be/3K12Dw2bY-Y" 
+                >自己做的小Project(搶學校運動場地用的)</a
+              ></li>
+            </ul>
+          </div>
+
+
         <div class="image-container">
           <img src="opencv.jpg" alt="學校作業" width="300" height="200" />
           <img
@@ -52,23 +56,26 @@
             height="200"
           />
         </div>
-      </div>
-
-      <div class="box3">
-        <h3>如果參與這個訓練，會怎麼安排學習時間？</h3>
+      
+    </details>
+      
+    <details class="details-class3" open>
+      <summary>如果參與這個訓練，會怎麼安排學習時間？</summary>
         <p>
           關於在時間安排上，因為就讀日間部且現在寫論文中，所以我有整天的時間可以安排學習。關於時間上的安排，我覺得我有信心，因為我有具體目的性，因為我希望我6月底口試完後，可以專心弄好我的實作並且面試到工作，然後直接從學校這邊搬家到公司附近。
         </p>
-      </div>
+    </details>
 
-      <div class="box4">
-        <h3>是否有想要加入的公司？為什麼想加入該公司？</h3>
+
+    <details class = "details-class2" open>
+      <summary>是否有想要加入的公司？為什麼想加入該公司？</summary>
         <p>
           如果是想加入的公司，因為我以前就讀護理系並成為臨床護理師一段時間，所以我希望如果可以的話，加入跟醫療有相關的公司或者是team。例如:廣達的BU12、DeepQ、智齡科技等等的公司，希望如果有機會的話，可以讓自己以前學的東西跟現在的工作進行結合。
         </p>
-      </div>
-      <div class="box5">
-        <h3>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h3>
+    </details>
+
+    <details class = "details-class4" open>
+      <summary>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</summary>
         <p>
           剛踏入醫院工作的我，面對了一個緊缺人手的臨床環境。忙碌的臨床環境導致學姊們希望新人能迅速成長，最好凡事指導一次後，新人就可以學會。在這種期望下，導致我剛開始時有不小的適應壓力。我不斷催促自己，希望能迅速熟悉工作流程，不給醫療團隊帶來額外負擔。然而，臨床工作的複雜程度遠超我所預期，有時是制度流程上的問題，有時則是溝通技巧上的挑戰。
         </p>
@@ -78,28 +85,45 @@
         <p>
           之後工作表現改善，不僅得到了學姊的認可和鼓勵，甚至獲得了家屬的讚賞。我從這段經歷中學到了，面對負面情緒時，以第三者的角度客觀分析自己的處境是非常重要的。並在明確問題後，找到解決方案並勇於求助，可以讓我們從他人的經驗中學習，找到克服困難的方法。
         </p>
-      </div>
-      <div class="box6">
-        <h3>關於這份申請網頁，分享一個開發時的技術心得。</h3>
+    </details>
+
+    <details class = "details-class2" open>
+      <summary>關於這份申請網頁，分享一個開發時的技術心得。</summary>
         <p>
           一開始在做這份網頁的時候，我沒有什麼排版上的想法，所以為了尋找靈感，我有搜尋一下Github上面關於portfolio以及小紅書和Google查詢看看，然後在我大致上確認想要的排版後，開始撰寫程式，並在不太會的時候查詢了W3School、iT邦幫忙等等的網站，然後慢慢把網頁做起來，而且我還找到了一個可以看顏色漸色效果的<a
             href="http://ourownthing.co.uk/gradpad.html"
             >網站</a
           >，來搭配我覺得好看的顏色，另外Flex排版也是一件蠻有趣的事情，重點還會了解了子父層之間的關係性，所以有做到我想要的效果，我覺得還蠻開心的!
         </p>
-      </div>
-      <div class="box7">
-        <h3>請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</h3>
+    </details>
+
+    <details class = "details-class5" open>
+      <summary>請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</summary>
         <p>
           我覺得與人交往最重要的是真誠，以自己真實的樣貌與人相處，發自內心的關懷他人，並同理對方的感受、換位思考，這樣才會找到志同道合的夥伴。
         </p>
-      </div>
-      <div class="box8">
-        <h3>其他想要對我們說的事情？</h3>
+    </details>
+
+
+    <details class = "details-class5" open>
+      <summary>其他想要對我們說的事情？</summary>
         <p>
           不好意思，我想要提一個小小的建議~截止日到3/17，如果可以加個時間的話，可能會更好一些。因為會不知道是到3/17的0:00還是3/17的23:59。多加上時間的話，可以讓想要申請者知道可奮鬥到最後的時間是什麼時候，小小建議一下，非常感謝你們!!
         </p>
-      </div>
+    </details>
+
+    <details class = "details-class5" open>
+      <summary>關於小任務挑戰的心得</summary>
+        <p>
+          收到信後說明的小任務是要以我的網頁為基礎然後在點擊每個問題的標題文字，就能隱藏或重新顯示對應的文字內容。
+          <p>我一開始還有點懵懂，所以先上網查詢看看，然後發現就好比是FAQ展開跟收合的效果，所以有看到用JavaScript做的，然後繼續找，就有找到HTML和CSS也有相關類似的東西，HTML的是details、summary，然後CSS也可以做隱藏式清單等等，所以我就開始試著寫。</p>
+          <p>我先試著用HTML的方法在原本的div class="box1"做，因為背景的顏色會重疊，沒有辦法一致性，就一個個看一下變化，所以了解details、summary、div class="box1"之間的關係，後來我就把div class="box1"類似的區塊容器刪掉了，因為發現在其實我要的效果直接變成class然後套在details就好，然後原本h3的東西套在summary就可以了。</p>
+          <p>雖然花了一點時間理解，但是有把小任務實現，並且跟之前做的東西差不多，還是蠻有成就感的!然後看了CSS選單相關的東西，算是知道了一些網站隱藏清單大概是怎麼做的，然後也有試著了解有關於下拉菜單的部分，所以有稍微修改一下內容。 </p>
+          <p>寫程式碼的過程中，我也有發現到有些第一次寫的東西蠻冗贅的，例如:我寫的.box1 p到.box8 p的CSS，但其實只要寫p就好了，因為我的p就只會用在內容敘述裡而已，所以有發現到自己多此一舉的code，下次會再仔細點的!</p>
+
+        </p>
+    </details>
+
     </div>
   </body>
 </html>
