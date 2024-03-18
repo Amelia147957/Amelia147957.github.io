@@ -136,11 +136,11 @@ body {
 
 h1 {
   color: #2f0ec2;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   background-image: linear-gradient(to right, #e890c6, #ba9adb);
-  width: 300px;
+  width: 600px;
   margin: 0 auto;
 }
 
