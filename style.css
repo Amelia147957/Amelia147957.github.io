@@ -160,6 +160,12 @@ img {
   border-radius: 10px;
 }
 
+ul {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 li {
   font-size: 18px;
   font-weight: bold;
@@ -169,6 +175,13 @@ li {
   margin: 10px;
   list-style-type: square;
   list-style-position: inside;
+}
+
+a {
+  color: #2f0ec2;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .container {
@@ -302,6 +315,7 @@ details:not([open]) summary {
   color: #b40000ec;
   font-weight: bold;
   display: block;
+  text-decoration: none;
 }
 
 .dropdown-content a:hover {
@@ -315,4 +329,7 @@ details:not([open]) summary {
 .dropdown:hover .drop {
   background-color: #0e193d;
   color: white;
+}
+.red {
+  color: #cf0808;
 }
