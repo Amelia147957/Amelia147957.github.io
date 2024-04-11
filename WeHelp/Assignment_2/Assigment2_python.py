@@ -32,7 +32,7 @@ def find_and_print(messages, current_station):
 
     for friend, message in messages.items():
         friend_station_name = None
-        # 找到匹配的站點名
+        # 找到匹配的站名
         for station_name in station_dict.keys():
             if station_name in message:
                 friend_station_name = station_name
