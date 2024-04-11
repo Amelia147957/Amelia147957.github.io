@@ -28,7 +28,7 @@ def find_and_print(messages, current_station):
     # 接下來要開始計算距離
     current_station_dis = station_dict[current_station]
     closest_friend = None
-    closest_distance = float('inf')
+    closest_distance = 1000
 
     for friend, message in messages.items():
         friend_station_name = None
