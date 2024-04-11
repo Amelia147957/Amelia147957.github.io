@@ -26,7 +26,7 @@ def find_and_print(messages, current_station):
                     }
 
     # 接下來要開始計算距離
-    current_station_number = station_dict[current_station]
+    current_station_dis = station_dict[current_station]
     closest_friend = None
     closest_distance = float('inf')
 
@@ -44,14 +44,14 @@ def find_and_print(messages, current_station):
                 extra_distance = 0.5
                 if friend_station_name == "Xiaobitan":
                     distance = abs(
-                        station_dict["Qizhang"] - current_station_number) + extra_distance
+                        station_dict["Qizhang"] - current_station_dis) + extra_distance
                 else:
                     distance = abs(
                         station_dict[friend_station_name] - station_dict["Qizhang"]) + extra_distance
             # 一般的狀況
             else:
                 friend_station_number = station_dict[friend_station_name]
-                distance = abs(friend_station_number - current_station_number)
+                distance = abs(friend_station_number - current_station_dis)
 
             if distance < closest_distance:
                 closest_distance = distance
