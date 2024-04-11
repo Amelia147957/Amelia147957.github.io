@@ -23,7 +23,7 @@ function findAndPrint(messages, currentStation) {
         "Xindian": 19
     };
 
-    const currentStationNumber = stationDict[currentStation];
+    const currentStationDis = stationDict[currentStation];
     let closestFriend = null;
     let closestDistance = 1000;
 
@@ -42,13 +42,13 @@ function findAndPrint(messages, currentStation) {
             if (friendStationName === "Xiaobitan" || currentStation === "Xiaobitan") {
                 const extraDistance = 0.5;
                 if (friendStationName === "Xiaobitan") {
-                    distance = Math.abs(stationDict["Qizhang"] - currentStationNumber) + extraDistance;
+                    distance = Math.abs(stationDict["Qizhang"] - currentStationDis) + extraDistance;
                 } else {
                     distance = Math.abs(stationDict[friendStationName] - stationDict["Qizhang"]) + extraDistance;
                 }
             } else {
                 const friendStationNumber = stationDict[friendStationName];
-                distance = Math.abs(friendStationNumber - currentStationNumber);
+                distance = Math.abs(friendStationNumber - currentStationDis);
             }
 
             if (distance < closestDistance) {
