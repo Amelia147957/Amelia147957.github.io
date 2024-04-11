@@ -25,7 +25,7 @@ function findAndPrint(messages, currentStation) {
 
     const currentStationNumber = stationDict[currentStation];
     let closestFriend = null;
-    let closestDistance = Infinity;
+    let closestDistance = 1000;
 
     for (let friend in messages) {
         let message = messages[friend];
