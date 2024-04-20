@@ -82,4 +82,6 @@ with open('spot.csv', 'w', newline='', encoding='utf-8-sig') as file:
 with open('mrt.csv', 'w', newline='', encoding='utf-8-sig') as file:
     writer = csv.writer(file)
     for MRT, spots in mrt_to_spot.items():
-        writer.writerow([MRT, ", ".join(spots)])
+        # 每個景點將被寫入獨立的欄位，先假設最多 10 個景點
+        row = [MRT] + spots + [''] * (10 - len(spots))
+        writer.writerow(row)
