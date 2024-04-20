@@ -42,20 +42,29 @@ function updateBoxes(boxes, attractionsList) {
     attractionsList.forEach((attraction, index) => {
         if (index < boxes.length) {
             const box = boxes[index];
-            const image = box.querySelector('img');
-            const title = box.querySelector('h2');
-            const text = box.querySelector('.text p');
 
+            //標題
+            const title = document.createElement('h2');
+            title.textContent = attraction.name;
+
+            //圖片
+            const image = document.createElement('img');
             image.src = attraction.imageUrl;
             image.alt = 'Image of ' + attraction.name;
+            image.style.width = "100%";
+            image.style.height = "auto";
 
-            // 如果有 title 和 text 的話，更新文字內容(因為small_box跟pic_big、pic_small裡面內容不太一樣)
-            if (title) {
-                title.textContent = attraction.name;
-            }
-            if (text) {
-                text.textContent = attraction.name;
-            }
+
+            //p段落
+            const text = document.createElement('p');
+            text.textContent = attraction.name;
+
+
+            //更新 box 內容
+            box.appendChild(image);
+            box.appendChild(title);
+            box.appendChild(text);
         }
     });
 }
+
