@@ -43,28 +43,48 @@ function updateBoxes(boxes, attractionsList) {
         if (index < boxes.length) {
             const box = boxes[index];
 
-            //標題
-            const title = document.createElement('h2');
-            title.textContent = attraction.name;
-
-            //圖片
-            const image = document.createElement('img');
+            // 更新圖片
+            let image = box.querySelector('img');
+            if (!image) {
+                image = document.createElement("img");
+                box.insertBefore(image, box.firstChild); // 將圖片插入到 box 的最前面
+            }
             image.src = attraction.imageUrl;
             image.alt = 'Image of ' + attraction.name;
-            image.style.width = "100%";
-            image.style.height = "auto";
 
+            let textContainer = box.querySelector('.text');
+            let textElement;
 
-            //p段落
-            const text = document.createElement('p');
-            text.textContent = attraction.name;
+            if (index < 3) {
+                //處理前3個用 h2 元素的 box
+                let title = box.querySelector('h2');
+                if (!title) {
+                    title = document.createElement('h2');
+                    if (textContainer) {
+                        box.insertBefore(title, textContainer);
+                    } else {
+                        box.appendChild(title);
+                    }
+                }
+                title.textContent = attraction.name;
+            } else {
+                // 對於第 4 個以後的 box，使用 p 元素 
+                if (!textContainer) {
+                    textContainer = document.createElement('div');
+                    textContainer.className = 'text';
+                    textElement = document.createElement('p');
+                    textContainer.appendChild(textElement);
+                    box.appendChild(textContainer);
+                } else {
 
-
-            //更新 box 內容
-            box.appendChild(image);
-            box.appendChild(title);
-            box.appendChild(text);
+                    textElement = textContainer.querySelector('p');
+                }
+                textElement.textContent = attraction.name;
+            }
         }
     });
 }
+
+
+
 
