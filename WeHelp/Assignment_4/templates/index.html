@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>登入頁面</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="signin-container">
+      <div class="header">歡迎光臨，請輸入帳號密碼</div>
+      <div class="title">
+        <h1>登入系統</h1>
+      </div>
+      <div class="signin">
+        <form id="signinForm" action="/signin" method="post">
+          <div class="form-field">
+            <label for="username" class="form-label">帳號</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-input"
+            />
+          </div>
+          <div class="form-field">
+            <label for="password" class="form-label">密碼</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-input"
+            />
+          </div>
+          <div class="form-checkbox">
+            <label for="privacy">同意條款</label>
+            <input type="checkbox" id="privacy" name="privacy" />
+          </div>
+          <button type="button" class="signin-button" onclick="checkTerms()">
+            登入
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function checkTerms() {
+    var privacyChecked = document.getElementById('privacy').checked
+    // 檢查是否有勾選同意條款
+    if (!privacyChecked) {
+      alert('Please check the checkbox first')
+      return false
+    }
+
+    // 提交Form
+    document.getElementById('signinForm').submit()
+    return true
+  }
+</script>
