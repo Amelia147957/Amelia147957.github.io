@@ -1,7 +1,5 @@
 # **Task 2**
-   #### *  Create a new database named website.
-       create database website;
-       ![image](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task2-1.jpg)
+   #### *  Create a new database named website
        ![Amelia147957.github.io](task2-1.jpg)
        
         <img src="[src-url](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task2-1.jpg)" height="240px" width="160px" />
