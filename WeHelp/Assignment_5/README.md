@@ -91,7 +91,7 @@
   #### * SELECT the sum of follower_count of all the rows from the member table.
 現在才發現要算follower_count，所以用了UPDATE member SET follower_count = 100 WHERE id = 1;以此類推的方式補資料進去。
 
-   ![task4-2](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task4-2.jpg)
+   ![task4-2](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task4-9.jpg)
    
    <pre><code>
       SELECT SUM(follower_count) AS total_followers_rows FROM member;
