@@ -53,7 +53,7 @@
   </code>
   </pre>
   
-  ![task3-5](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-6.jpg)
+  ![task3-5]()
   
   #### * SELECT rows where name includes the es keyword.
   <pre><code>
@@ -69,7 +69,7 @@
   </code>
   </pre>
   
-  ![task3-7](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-7.jpg)
+  ![task3-7]((https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-6.jpg)
   
   #### * UPDATE data in name column to test2 where username equals to test.
   <pre><code>
@@ -77,7 +77,7 @@
   </code>
   </pre>
   
-   ![task3-8](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-8.jpg)
+   ![task3-8](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-7.jpg)
    
    # **Task 4**
    #### * SELECT how many rows from the member table.
