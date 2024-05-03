@@ -37,7 +37,7 @@
    </code>
    </pre>
    
-   ![task3-3](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-3.jpg)
+   ![task3-3](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-4.jpg)
    
    #### * SELECT total 3 rows, second to fourth, from the member table, in descending order of time. Note: it does not mean SELECT rows where id are 2, 3, or 4.
    <pre><code>
@@ -45,7 +45,7 @@
    </code>
    </pre>
    
-   ![task3-4](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-4.jpg)
+   ![task3-4](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-5.jpg)
    
   #### * SELECT rows where username equals to test.
   <pre><code>
