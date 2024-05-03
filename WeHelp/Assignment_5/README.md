@@ -14,7 +14,7 @@
 # **Task 3**
    #### * INSERT a new row to the member table where name, username and password must be set to test. INSERT additional 4 rows with arbitrary data.
    <pre><code>
-      NSERT INTO member (name, username, password) VALUES ("test", "test", "test"),("abc","abc","123"),("def","def","456"),("aaaa","aaaa","1111"),("bbbb","bbbb","2222");
+      INSERT INTO member (name, username, password) VALUES ("test", "test", "test"),("abc","abc","123"),("def","def","456"),("aaaa","aaaa","1111"),("bbbb","bbbb","2222");
    </code>
    </pre>
    ![task3-1](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-1.jpg)
