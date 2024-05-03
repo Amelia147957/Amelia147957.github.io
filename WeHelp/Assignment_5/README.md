@@ -1,8 +1,8 @@
 # **Task 2**
    #### *  Create a new database named website.
-       ''' sql
+       
        create database website;
-       '''
+       
        ![image](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task2-1.jpg)
         
    #### *  Create a new table named member, in the website database, designed as below:
