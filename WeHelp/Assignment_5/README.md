@@ -53,7 +53,7 @@
   </code>
   </pre>
   
-  ![task3-5](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-5.jpg)
+  ![task3-5](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-6.jpg)
   
   #### * SELECT rows where name includes the es keyword.
   <pre><code>
@@ -61,7 +61,7 @@
    </code>
   </pre>
   
-  ![task3-6](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-6.jpg)
+  ![task3-6](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-5.jpg)
   
   #### * SELECT rows where both username and password equal to test.
   <pre><code>
