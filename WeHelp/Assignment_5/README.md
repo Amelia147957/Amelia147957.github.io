@@ -45,7 +45,7 @@
    </code>
    </pre>
    
-   ![task3-4](https://github.com/Amelia147957/Amelia147957.github.io/blob/main/WeHelp/Assignment_5/pic/task3-5.jpg)
+   ![task3-4]()
    
   #### * SELECT rows where username equals to test.
   <pre><code>
